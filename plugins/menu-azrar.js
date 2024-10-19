@@ -15,12 +15,14 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
     let locale = 'ar';
     let week = d.toLocaleDateString(locale, { weekday: 'long' });
     let date = d.toLocaleDateString(locale, { day: 'numeric', month: 'long', year: 'numeric' });
+    let _time = process.uptime() * 1000;
+    let time = clockString(_time);
     let _uptime = process.uptime() * 1000;
     let uptime = clockString(_uptime);
     let user = global.db.data.users[m.sender] || {};
     let name = conn.getName(m.sender) || 'مستخدم';
-    let { money = 0, joincount = 0, diamond = 0 } = user;
-    let { exp = 0, limit = 0, level = 0, role = 'مستخدم' } = user;
+    let { dollar = 0, joincount = 0, diamond = 0 } = user;
+    let { exp = 0, gold = 0, level = 0, role = 'مستخدم' } = user;
     let rtotalreg = Object.values(global.db.data.users).filter(user => user.registered === true).length;
     let more = String.fromCharCode(8206);
     let readMore = more.repeat(850);
@@ -40,18 +42,12 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
 
     // تجهيز الصورة والقائمة
     const images = [
-        'https://telegra.ph/file/bd87aef51ebbbba4901c8.jpg',
-        'https://telegra.ph/file/b9c7242b2ea534c9fea51.jpg',
-        'https://telegra.ph/file/0e611ef0f5898f84e06ff.jpg',
-        'https://telegra.ph/file/e40751a79e8f69137c772.jpg',
-        'https://telegra.ph/file/81ef617af171d1263bca4.jpg', 
-        'https://telegra.ph/file/9ece2dc7647c5bc552f7a.jpg', 
-        'https://telegra.ph/file/5a22e9d6a3db8a26c2a8d.jpg', 
-        'https://telegra.ph/file/5122cb52f3d3e6a15d27d.jpg', 
-        'https://telegra.ph/file/7d69133c3dae7d2cb988e.jpg', 
-        'https://telegra.ph/file/7af98c215f23a0c7bfc6a.jpg', 
-        'https://telegra.ph/file/e704ae1c0637553a0bff0.jpg', 
-        'https://telegra.ph/file/f4fe5a6340ca9f5890cb4.jpg'
+        'https://envs.sh/I_W.jpg',
+        'https://envs.sh/pFb.jpg',
+        'https://envs.sh/pFi.jpg',
+        'https://envs.sh/I_W.jpg',
+        'https://envs.sh/pFb.jpg', 
+        'https://envs.sh/pFi.jpg',
     ];
 
     const randomImage = images[Math.floor(Math.random() * images.length)];
@@ -158,8 +154,8 @@ messageParamsJson: "Raizel Bot"
 {
     name: "quick_reply",
     buttonParamsJson: JSON.stringify({
-        display_text: "『』قيم البوت《",
-        id: ".تقييم"
+        display_text: "⌈🌟╎قيم البوت╎🌟⌋",
+        id: ".تقيم"
     })
 },
 {
@@ -182,8 +178,8 @@ messageParamsJson: "Raizel Bot"
     name: "cta_url",
     buttonParamsJson: JSON.stringify({
         display_text: "⌈🚨╎قناة المطورين╎🚨⌋",
-        url: "https://linkbio.co/el-tarboo",
-        merchant_url: "https://linkbio.co/el-tarboo"
+        url: "https://whatsapp.com/channel/0029VaXddtu0lwgiREisx82C",
+        merchant_url: "https://whatsapp.com/channel/0029VaXddtu0lwgiREisx82C"
                         ]
                     }
                 }

@@ -153,8 +153,8 @@ messageParamsJson: "Raizel Bot"
 {
     name: "quick_reply",
     buttonParamsJson: JSON.stringify({
-        display_text: "⌈🌟╎قــيــم الــبــوت╎🌟⌋",
-        id: ".تقيم"
+        display_text: "⌈🤖╎الــدعــم╎🤖⌋",
+        id: ".الدعم"
     })
 },
 {

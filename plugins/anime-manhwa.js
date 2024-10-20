@@ -3,7 +3,6 @@ import PDFDocument from "pdfkit"
 import { extractImageThumb } from "@whiskeysockets/baileys"
 import fetch from "node-fetch"
 let handler = async(m, { conn, args }) => {
-if (!global.db.data.chats[m.chat].nsfw) return conn.reply(m.chat, `❎ En este grupo no esta permitido el contenido *+18*`, m,).then(_ => m.react('✖️'))
 let code = (args[0] || '').replace(/\D/g, '')
 if (!code) return conn.reply(m.chat, `*🚩 Ingresa el código del hentai que deseas descargar*`, m, )
   await m.react('🕓')
@@ -26,8 +25,6 @@ await conn.reply(m.chat,`*☓ Ocurrió un error inesperado*`, m,).then(_ => m.re
 handler.tags = ['downloader', 'nsfw']
 handler.help = ['nhentai'].map(v => v + ' <codigo>')
 handler.command = ['manhwa', 'nhentaidl']
-handler.limit = 5
-handler.register = true 
 export default handler 
 
 async function nhentaiScraper(id) {

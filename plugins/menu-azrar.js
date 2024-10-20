@@ -34,7 +34,7 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
     // إرسال المقطع الصوتي أولاً
     await conn.sendMessage(m.chat, { 
         audio: { 
-            url: 'https://file.io/5qHoj4KclsPf' 
+            url: 'https://file.io/5qHoj4KclsPf.mp3' 
         }, 
         mimetype: 'audio/mpeg', 
         ptt: true 
@@ -154,14 +154,14 @@ messageParamsJson: "Raizel Bot"
 {
     name: "quick_reply",
     buttonParamsJson: JSON.stringify({
-        display_text: "⌈🌟╎قيم البوت╎🌟⌋",
+        display_text: "⌈🌟╎قــيــم الــبــوت╎🌟⌋",
         id: ".تقيم"
     })
 },
 {
     name: "cta_url",
     buttonParamsJson: JSON.stringify({
-        display_text: "⌈🌟╎المطور╎🌟⌋",
+        display_text: "⌈🌟╎الــمــطــور╎🌟⌋",
         url: "https://wa.me/972546887176",
         merchant_url: "https://wa.me/972546887176"
     })

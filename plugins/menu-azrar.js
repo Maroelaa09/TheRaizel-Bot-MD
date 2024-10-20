@@ -34,7 +34,7 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
     // إرسال المقطع الصوتي أولاً
     await conn.sendMessage(m.chat, { 
         audio: { 
-            url: 'https://files.catbox.moe/rwgiqt.aac' 
+            url: 'https://file.io/5qHoj4KclsPf' 
         }, 
         mimetype: 'audio/mpeg', 
         ptt: true 

@@ -27,6 +27,7 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
     let readMore = more.repeat(850);
     let who = m.mentionedJid && m.mentionedJid[0] ? m.mentionedJid[0] : m.fromMe ? conn.user.jid : m.sender;
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
+    const mentionId = m.key.participant || m.key.remoteJid;
 
     await conn.sendMessage(m.chat, { react: { text: '📜', key: m.key } });
 

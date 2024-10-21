@@ -106,9 +106,9 @@ let txt = '•╌╌╌〔 *👾 التنصيب 👾* 〕╌╌╌•\n\n'
  txt += 'هذا الرمز يعمل فقط على الرقم الذي طلبه.\n\n'
 
 
-await parent.sendButton(m.chat, txt, wm, pp, [['','']], codeBot, [['الد؏ــم',`https://whatsapp.com/channel/0029VaoUBmSKmCPIIiEatx1H`]], contactInfo);
+await parent.sendButton(m.chat, txt, wm, pp, [['','']], codeBot, [['الد؏ــم',`https://whatsapp.com/channel/0029VarJdJO7dmeZS5ZKft1U`]], contactInfo);
 
-//await parent.sendButton(m.chat, txt, wm, pp, null, [['الڪــود',`${codeBot}`]], [['الد؏ــم',`https://whatsapp.com/channel/0029VaoUBmSKmCPIIiEatx1H`]], contactInfo);
+//await parent.sendButton(m.chat, txt, wm, pp, null, [['الڪــود',`${codeBot}`]], [['الد؏ــم',`https://whatsapp.com/channel/0029VarJdJO7dmeZS5ZKft1U`]], contactInfo);
 //await parent.reply(m.chat, txt, contactInfo);
 //await parent.reply(m.chat, codeBot, contactInfo);
 rl.close();

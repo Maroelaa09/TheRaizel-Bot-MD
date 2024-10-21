@@ -9,15 +9,17 @@ let dollarpremium = `${pickRandom([1000, 1500, 1800, 2100, 2500, 2900, 3300, 360
 let exp = `${pickRandom([300, 500, 700, 900, 500, 800, 900, 1100, 1350, 1500])}` * 1
 let exppremium = `${pickRandom([800, 1300, 1600, 1900, 2200, 2500, 2700, 3000, 3300, 3500])}` * 1
 
+
+let diamond = `${pickRandom([300, 500, 700, 900, 500, 800, 900, 1100, 1350, 1500])}` * 1
+let diamondpremium = `${pickRandom([800, 1300, 1600, 1900, 2200, 2500, 2700, 3000, 3300, 3500])}` * 1
+
+
 //let gata = Math.floor(Math.random() * 2000)
 
 const recompensas = {	
   dollar: premium ? dollarpremium : dollar,
   exp: premium ? exppremium : exp,
-  potion: premium ? potionpremium : potion,
   diamond: premium ? tiketcoinpremium : diamond,	
-  eleksirb: premium ? eleksirbpremium : eleksirb,
-  umpan: premium ? umpanpremium : umpan,
 }
 
 let time = user.lastclaim + 7200000 //2 Horas 7200000

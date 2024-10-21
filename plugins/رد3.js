@@ -7,7 +7,7 @@ await conn.sendMessage(m.chat, { react: { text: '🦇', key: m.key } })
     conn.sendFile(m.chat, 'https://envs.sh/Bin.jpg', 'image.jpg', message, m);
 };
 
-handler.customPrefix = /^رايزل$/i;
+handler.customPrefix = /^ماندو$/i;
 handler.command = new RegExp;
 
 export default handler;

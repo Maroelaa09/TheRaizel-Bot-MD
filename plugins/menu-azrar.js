@@ -8,7 +8,6 @@ function clockString(ms) {
     return [h, m, s].map(v => v.toString().padStart(2, '0')).join(':');
 }
 const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
-    let vn = './bbb.mp3'
     let d = new Date();
     d.setTime(d.getTime() + 3600000); // تعديل وقت الساعة بإضافة ساعة
     let locale = 'ar';
@@ -30,9 +29,6 @@ const handler = async (m, { conn, usedPrefix, __dirname, text, isPrems }) => {
     const mentionId = m.key.participant || m.key.remoteJid;
 
     await conn.sendMessage(m.chat, { react: { text: '📜', key: m.key } });
-
-    // إرسال المقطع الصوتي أولاً
-    await conn.sendFile(m.chat, vn, 'bbb.mp3', null, m, true, { type: 'audioMessage', ptt: true})
 
     // تجهيز الصورة والقائمة
     const images = [
@@ -186,6 +182,6 @@ messageParamsJson: "Raizel Bot"
 
 handler.help = ['info'];
 handler.tags = ['main'];
-handler.command = ['اوامر', 'الاوامر', 'menu', 'وه'];
+handler.command = ['اوامر', 'الاوامر', 'menu', 'اعع'];
 
 export default handler;

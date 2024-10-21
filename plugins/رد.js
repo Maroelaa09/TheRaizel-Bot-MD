@@ -3,7 +3,7 @@ let handler = m => m
  let chat = global.db.data.chats[m.chat] 
   
  if (/^احا$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat,`*وه بل تــكــت بــتــاعــهــا 👀*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
+     conn.reply(m.chat,`*وخد احا كمان مني عشان مخنوق 👽*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
 await conn.sendMessage(m.chat, { react: { text: '🐧', key: m.key } })
   }
 
@@ -16,15 +16,15 @@ await conn.sendMessage(m.chat, { react: { text: '🐧', key: m.key } })
 await conn.sendMessage(m.chat, { react: { text: '😺', key: m.key } })
    }
     if (/^😂$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*تــدوم يــاض 😂*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+     conn.reply(m.chat, `*تــدوم يعمري 💘*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 }
     if (/^كسمك$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*عــيــب يــاض 🗿😭*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+     conn.reply(m.chat, `*لو بتشتم المبوت ف ينعل كسم ال خلفتك*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 await conn.sendMessage(m.chat, { react: { text: '🗿', key: m.key } })
 }
 
  if (/^يابوت|يا بوت$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*هممممم وش في انت كمان 🗿*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
+     conn.reply(m.chat, `*مخلاص يخويا بقا هو انا لعبة*`, m) //wm, null, [['Menu', '#menu']], m) botones :V 
 await conn.sendMessage(m.chat, { react: { text: '🗿', key: m.key } })
  } 
 
@@ -33,12 +33,12 @@ await conn.sendMessage(m.chat, { react: { text: '🗿', key: m.key } })
 await conn.sendMessage(m.chat, { react: { text: '😂', key: m.key } })
    }
 
-   if (/^بوت خرا|بوت زفت|خرا عليك$/i.test(m.text) ) { //sem prefixo
-     conn.reply(m.chat,'  *دزهــا يــاض 😂🗿*',m) //wm, null, [['Menu','#menu']], m) botones :v
+   if (/^بوت خول|بوت زفت|خرا عليك$/i.test(m.text) ) { //sem prefixo
+     conn.reply(m.chat,'  *اخرص يبن المنيوكه*',m) //wm, null, [['Menu','#menu']], m) botones :v
 
    }
  if (/^بحبك|احبك$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*وانـا كـمـان 😂❤️*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+     conn.reply(m.chat, `*هنخيب 😂*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
  } 
 

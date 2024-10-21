@@ -3,8 +3,8 @@ let handler = async (m, { isPrems, conn }) => {
 let user = global.db.data.users[m.sender]
 let premium = user.premium
 
-let dollar = `${pickRandom([500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000])}` * 1
-let dollarpremium = `${pickRandom([1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000])}` * 1
+let exp = `${pickRandom([500, 1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000])}` * 1
+let exppremium = `${pickRandom([1000, 2000, 3000, 4000, 5000, 6000, 7000, 8000, 9000, 10000])}` * 1
 
 let diamond = `${pickRandom([20, 40, 60, 80, 100, 120, 150])}` * 1
 let diamondpremium = `${pickRandom([50, 100, 150, 200, 250, 300])}` * 1
@@ -15,7 +15,7 @@ let goldpremium = `${pickRandom([9, 18, 26, 38, 45])}` * 1
 const recompensas = {
   diamond: premium ? joincountpremium : diamond,
   gold: premium ? goldpremium : gold,
-  dollar: premium ? dollarpremium : dollar,
+  exp: premium ? exppremium : exp,
 }
 
 let time = user.lastmonthly + 730000000 //432000000 5 dias

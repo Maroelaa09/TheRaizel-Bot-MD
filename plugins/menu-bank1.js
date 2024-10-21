@@ -31,7 +31,7 @@ const handler = async (m, { conn }) => {
 *❐『.محفظة』*
 *❐『.منجم_الذهب』*
 *❐═━━━═╊⊰🦇⊱╉═━━━═❐*
-> © 𝐍𝐀𝐑𝐔𝐓𝐎 & 𝐙𝐀𝐂𝐊 2025`,
+> © 𝐵𝛩𝑇_𝑀𝐴𝑁𝐷𝛩 2025`,
                         subtitle: "HARLEY"
                     },
                     header: {
@@ -42,11 +42,11 @@ const handler = async (m, { conn }) => {
                         buttons: [
                             {
                                 name: "cta_url",
-                                buttonParamsJson: '{"display_text":"⌈🤖╎قـنـاة الــبــوت╎🤖⌋","url":"https://whatsapp.com/channel/0029VaoUBmSKmCPIIiEatx1H","merchant_url":"https://whatsapp.com/channel/0029VaoUBmSKmCPIIiEatx1H"}'
+                                buttonParamsJson: '{"display_text":"⌈🤖╎قـنـاة الــبــوت╎🤖⌋","url":"https://whatsapp.com/channel/0029VarJdJO7dmeZS5ZKft1U","merchant_url":"https://api.whatsapp.com/send?phone=+201144987551"}'
                             },
                             {
                                 name: "cta_url",
-                                buttonParamsJson: '{"display_text":"⌈📲╎قـنـاة الـمـطـور╎📲⌋","url":"https://whatsapp.com/channel/0029ValRCUIFi8xmK9xBOr0I","merchant_url":"https://whatsapp.com/channel/0029ValRCUIFi8xmK9xBOr0I"}'
+                                buttonParamsJson: '{"display_text":"⌈📲╎قـنـاة الـمـطـور╎📲⌋","url":"https://whatsapp.com/channel/0029VarJdJO7dmeZS5ZKft1U","merchant_url":"https://whatsapp.com/channel/0029VarJdJO7dmeZS5ZKft1U"}'
                             }
                         ]
                     }

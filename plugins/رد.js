@@ -19,7 +19,7 @@ await conn.sendMessage(m.chat, { react: { text: '😺', key: m.key } })
      conn.reply(m.chat, `*تــدوم يعمري 💘*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 }
     if (/^كسمك$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*لو بتشتم المبوت ف ينعل كسم ال خلفتك*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+     conn.reply(m.chat, `*لو بتشتم البوت ف ينعل كسم ال خلفتك*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 await conn.sendMessage(m.chat, { react: { text: '🗿', key: m.key } })
 }
 
@@ -38,7 +38,7 @@ await conn.sendMessage(m.chat, { react: { text: '😂', key: m.key } })
 
    }
  if (/^بحبك|احبك$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*هنخيب 😂*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+     conn.reply(m.chat, `*لو ولد خف شرمطه واسترجل لو بنت ف انا بحبك اوي*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
 
  } 
 
@@ -51,8 +51,8 @@ await conn.sendMessage(m.chat, { react: { text: '😂', key: m.key } })
 
  } 
   
- if (/^امزح|بهزر$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*هــزر بــراحــتــك يــابــن قــلـبـي 😂❤️*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+ if (/^كسم البوت|كسم المطور$/i.test(m.text) ) { //sem prefixo 
+     conn.reply(m.chat, `*بس يبن الشرموطه اخرص*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
    } 
   
  if (/^في ايه$/i.test(m.text) ) { //sem prefixo 
@@ -60,7 +60,7 @@ await conn.sendMessage(m.chat, { react: { text: '😂', key: m.key } })
  } 
   
  if (/^تست$/i.test(m.text) ) { //sem prefixo 
-     conn.reply(m.chat, `*شــغــال يــاض 👀*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
+     conn.reply(m.chat, `*شغال يعمري*`, m) //wm, null, [['Menu', '#menu']], m) botones :V
   
  } 
   

@@ -4,7 +4,8 @@ let handler = async (m, { conn }) => {
     let taguser = '@' + m.sender.split("@s.whatsapp.net")[0];
     let message = `*سـمـعـت حـد بـيـنـادي عـلـيـا 🦇*`;
 await conn.sendMessage(m.chat, { react: { text: '🦇', key: m.key } })
-    conn.sendFile(m.chat, 'https://envs.sh/Bin.jpg', 'image.jpg', message, m);
+    conn.sendFile(m.chat, '
+                  https:/qu.ax/saEnj.mp4', 'image.jpg', message, m);
 };
 
 handler.customPrefix = /^ماندو$/i;
